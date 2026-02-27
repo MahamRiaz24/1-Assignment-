@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xcpp23",
+      "display_name": "C++23",
+      "language": "cpp"
+    },
+    "language_info": {
+      "name": ""
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "f4e7e172-16ba-4760-ad0f-ba4a6544012c",
+      "cell_type": "code",
+      "source": "# ==============================\n# 1. Twinkle Twinkle Little Star\n# ==============================\nprint(\"\"\"Twinkle, twinkle, little star,\n    How I wonder what you are!\n        Up above the world so high,\n        Like a diamond in the sky.\nTwinkle, twinkle, little star,\n    How I wonder what you are\"\"\")\n\n# ==============================\n# 2. Python Version\n# ==============================\nimport sys, platform\nprint(\"\\nPython Version:\")\nprint(sys.version)\nprint(\"\\nPlatform Info:\")\nprint(platform.platform())\n\n# ==============================\n# 3. Current Date and Time\n# ==============================\nfrom datetime import datetime\nnow = datetime.now()\nprint(\"\\nCurrent Date & Time:\", now.strftime(\"%Y-%m-%d %H:%M:%S\"))\n\n# ==============================\n# 4. Area of Circle\n# ==============================\nimport math\nr = float(input(\"\\nEnter radius of circle: \"))\narea = math.pi * r**2\nprint(\"Area =\", area)\n\n# ==============================\n# 5. Reverse First and Last Name\n# ==============================\nfirst = input(\"\\nEnter first name: \")\nlast = input(\"Enter last name: \")\nprint(\"Reversed:\", last, first)\n\n# ==============================\n# 6. Addition of Two Numbers\n# ==============================\na = float(input(\"\\nEnter first number: \"))\nb = float(input(\"Enter second number: \"))\nprint(\"Sum =\", a + b)\n\n# ==============================\n# 7. 5 Subjects Marks & Grade\n# ==============================\nmarks = []\nfor i in range(1, 6):\n    m = float(input(f\"Enter marks of subject {i} (out of 100): \"))\n    marks.append(m)\n\ntotal = sum(marks)\npercentage = total / 5\nif percentage >= 90:\n    grade = \"A+\"\nelif percentage >= 80:\n    grade = \"A\"\nelif percentage >= 70:\n    grade = \"B\"\nelif percentage >= 60:\n    grade = \"C\"\nelif percentage >= 50:\n    grade = \"D\"\nelse:\n    grade = \"F\"\n\nprint(\"\\n--- Mark Sheet ---\")\nfor i, m in enumerate(marks, 1):\n    print(f\"Subject {i}: {m}\")\nprint(\"Total:\", total)\nprint(\"Percentage:\", percentage, \"%\")\nprint(\"Grade:\", grade)\n\n# ==============================\n# 8. Even or Odd\n# ==============================\nnum = int(input(\"\\nEnter a number: \"))\nif num % 2 == 0:\n    print(num, \"is Even\")\nelse:\n    print(num, \"is Odd\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "ac463856-f6c2-4131-80c3-4e6a7f961dcc",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true,
+        "jupyter": {
+          "source_hidden": true
+        },
+        "tags": [],
+        "editable": true,
+        "slideshow": {
+          "slide_type": ""
+        }
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "5579d97d-97ba-4055-8f09-2932c2602e5d",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true,
+        "tags": [],
+        "editable": true,
+        "slideshow": {
+          "slide_type": ""
+        }
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
