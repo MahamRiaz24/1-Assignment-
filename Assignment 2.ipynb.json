@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "a95c5c2c-ad44-4070-970c-8e52aa0074e5",
+      "cell_type": "code",
+      "source": "# -------- Task 1 --------\n# Print the length of the list\n\nmy_list = [1, 2, 3, 4, 5, 6]\n\nprint(\"Length of list:\", len(my_list))\n\n\n# -------- Task 2 --------\n# Sum all numeric items in a list\n\nnumbers = [10, 20, 30, 40, 50]\n\ntotal = sum(numbers)\n\nprint(\"Sum of list items:\", total)\n\n\n# -------- Task 3 --------\n# Get the largest number from a numeric list\n\nnum_list = [12, 45, 7, 89, 23]\n\nlargest = max(num_list)\n\nprint(\"Largest number:\", largest)\n\n\n# -------- Task 4 --------\n# Print elements less than 5\n\na = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n\nprint(\"Numbers less than 5:\")\n\nfor item in a:\n    if item < 5:\n        print(item)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Length of list: 6\nSum of list items: 150\nLargest number: 89\nNumbers less than 5:\n1\n1\n2\n3\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "c03c2f82-19b0-41f0-8dd1-20b65252e255",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "c5caa5a2-4771-4f9a-9f30-aa81cdfc66df",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
