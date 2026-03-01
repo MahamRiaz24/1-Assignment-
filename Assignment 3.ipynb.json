@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "a67a6ba7-a7ac-454e-8d3e-e75ef42c13ae",
+      "cell_type": "code",
+      "source": "# Calculator Program\n\na = float(input(\"Enter first number: \"))\nb = float(input(\"Enter second number: \"))\n\nprint(\"Addition =\", a + b)\nprint(\"Subtraction =\", a - b)\nprint(\"Multiplication =\", a * b)\n\nif b != 0:\n    print(\"Division =\", a / b)\nelse:\n    print(\"Division not possible\")\n\nprint(\"Power =\", a ** b)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter first number:  25\nEnter second number:  30\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Addition = 55.0\nSubtraction = -5.0\nMultiplication = 750.0\nDivision = 0.8333333333333334\nPower = 8.673617379884035e+41\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "6ef689e2-4400-4f58-97de-8cf1a2ceae4c",
+      "cell_type": "code",
+      "source": "my_list = [10, \"Ali\", 5.5, \"Python\"]\n\nfound = False\n\nfor item in my_list:\n    if isinstance(item, (int, float)):\n        found = True\n        break\n\nif found:\n    print(\"Numeric value exists in list\")\nelse:\n    print(\"No numeric value found\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Numeric value exists in list\n"
+        }
+      ],
+      "execution_count": 5
+    },
+    {
+      "id": "db148794-675d-479f-8ed1-5a0c3b2687e7",
+      "cell_type": "code",
+      "source": "student = {\n    \"name\": \"Maham\",\n    \"age\": 20\n}\n\nstudent[\"city\"] = \"Karachi\"\n\nprint(\"Updated Dictionary:\")\nprint(student)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Updated Dictionary:\n{'name': 'Maham', 'age': 20, 'city': 'Karachi'}\n"
+        }
+      ],
+      "execution_count": 6
+    },
+    {
+      "id": "bdbd140d-c816-4954-b27c-320640d2ed98",
+      "cell_type": "code",
+      "source": "data = {\n    \"a\": 10,\n    \"b\": 20,\n    \"c\": \"Hello\",\n    \"d\": 5\n}\n\ntotal = 0\n\nfor value in data.values():\n    if isinstance(value, (int, float)):\n        total += value\n\nprint(\"Sum of numeric values =\", total)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Sum of numeric values = 35\n"
+        }
+      ],
+      "execution_count": 7
+    },
+    {
+      "id": "f08301eb-3ac3-4937-af04-5b2a3055e0c1",
+      "cell_type": "code",
+      "source": "my_list = [1, 2, 3, 2, 4, 5, 1]\n\nduplicates = []\n\nfor item in my_list:\n    if my_list.count(item) > 1 and item not in duplicates:\n        duplicates.append(item)\n\nprint(\"Duplicate values:\", duplicates)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Duplicate values: [1, 2]\n"
+        }
+      ],
+      "execution_count": 8
+    },
+    {
+      "id": "e11765fd-6ee4-42a5-81a3-c08154e6f198",
+      "cell_type": "code",
+      "source": "my_dict = {\n    \"name\": \"Ali\",\n    \"age\": 22\n}\n\nkey = input(\"Enter key to check: \")\n\nif key in my_dict:\n    print(\"Key exists in dictionary\")\nelse:\n    print(\"Key does not exist\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter key to check:  22\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Key does not exist\n"
+        }
+      ],
+      "execution_count": 9
+    },
+    {
+      "id": "4e3a6b2f-cd87-4fc3-939a-1ee7907f76cd",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
